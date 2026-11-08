@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "he-she",
+    "level": "A1",
+    "title": "he / she / it",
+    "titleFa": "او: مذکر یا مؤنث؟",
+    "explainFa": "در فارسی «او» و «ـش» برای مرد و زن یکسان است، برای همین فارسی‌زبان‌ها گاهی he و she را با هم قاطی می‌کنند.\nدر انگلیسی برای مرد he و his، برای زن she و her، و برای اشیا و حیوانات معمولاً it و its می‌گوییم. قبل از گفتن ضمیر یک لحظه فکر کنید: مرد است، زن است یا یک چیز؟",
+    "rule": "Use he/his for a man, she/her for a woman, and it/its for a thing or an animal.",
+    "examples": [
+      {
+        "wrong": "My mother is a doctor. He works at night.",
+        "right": "My mother is a doctor. She works at night."
+      },
+      {
+        "wrong": "My sister and his husband live in Tehran.",
+        "right": "My sister and her husband live in Tehran."
+      },
+      {
+        "wrong": "I have a new phone. She is very fast.",
+        "right": "I have a new phone. It is very fast."
+      }
+    ],
+    "items": [
+      {
+        "q": "My brother has a new job. ___ is very happy.",
+        "opts": [
+          "He",
+          "She",
+          "It"
+        ],
+        "a": 0,
+        "whyFa": "برادر مذکر است، پس He."
+      },
+      {
+        "q": "My aunt lives in Shiraz. I visit ___ every summer.",
+        "opts": [
+          "him",
+          "it",
+          "her"
+        ],
+        "a": 2,
+        "whyFa": "aunt (خاله یا عمه) زن است و در جایگاه مفعول her می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Sara is a nurse. He works in a big hospital.",
+          "Sara is a nurse. She works in a big hospital.",
+          "Sara is a nurse. It works in a big hospital."
+        ],
+        "a": 1,
+        "whyFa": "سارا زن است، پس She."
+      },
+      {
+        "q": "Maryam is talking to ___ mother on the phone.",
+        "opts": [
+          "his",
+          "her",
+          "its"
+        ],
+        "a": 1,
+        "whyFa": "مریم زن است، پس «مادرش» می‌شود her mother."
+      },
+      {
+        "q": "I bought a new laptop. ___ is very light.",
+        "opts": [
+          "He",
+          "She",
+          "It"
+        ],
+        "a": 2,
+        "whyFa": "لپ‌تاپ یک شیء است، پس It."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My sister and her husband live in Canada.",
+          "My sister and his husband live in Canada.",
+          "My sister and its husband live in Canada."
+        ],
+        "a": 0,
+        "whyFa": "خواهر زن است، پس «شوهرش» می‌شود her husband."
+      },
+      {
+        "q": "Ali is my neighbor. I often see ___ in the park.",
+        "opts": [
+          "her",
+          "him",
+          "he"
+        ],
+        "a": 1,
+        "whyFa": "علی مرد است و بعد از فعل (در جایگاه مفعول) him می‌آید، نه he."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The hotel was nice, but his rooms were small.",
+          "The hotel was nice, but her rooms were small.",
+          "The hotel was nice, but it rooms were small.",
+          "The hotel was nice, but its rooms were small."
+        ],
+        "a": 3,
+        "whyFa": "هتل یک شیء است، پس «اتاق‌هایش» می‌شود its rooms."
+      },
+      {
+        "q": "My grandfather is 80, but ___ still walks every morning.",
+        "opts": [
+          "he",
+          "she",
+          "it"
+        ],
+        "a": 0,
+        "whyFa": "پدربزرگ مرد است، پس he."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My boss is a woman. He is very kind.",
+          "My boss is a woman. It is very kind.",
+          "My boss is a woman. She is very kind."
+        ],
+        "a": 2,
+        "whyFa": "رئیس در این جمله زن است، پس She."
+      }
+    ]
+  },
+  {
+    "id": "a-an",
+    "level": "A1",
+    "title": "a / an",
+    "titleFa": "a و an را جا نیندازید",
+    "explainFa": "در فارسی می‌گوییم «من معلم هستم» یا «او ماشین دارد» و به «یک» نیازی نیست. اما در انگلیسی قبل از اسم مفرد و قابل‌شمارش باید a یا an بیاید، مخصوصاً برای شغل‌ها: I am a teacher.\nانتخاب بین a و an به صدای اول کلمه بستگی دارد، نه به حرف اول آن: an hour (چون h خوانده نمی‌شود) ولی a university (چون با صدای «یو» شروع می‌شود).",
+    "rule": "Use a/an before a singular countable noun (including jobs): an before a vowel sound, a before a consonant sound.",
+    "examples": [
+      {
+        "wrong": "I am teacher.",
+        "right": "I am a teacher."
+      },
+      {
+        "wrong": "She has car.",
+        "right": "She has a car."
+      },
+      {
+        "wrong": "I waited for a hour.",
+        "right": "I waited for an hour."
+      }
+    ],
+    "items": [
+      {
+        "q": "My father is ___.",
+        "opts": [
+          "an engineer",
+          "engineer",
+          "a engineer"
+        ],
+        "a": 0,
+        "whyFa": "برای شغل a/an لازم است و engineer با صدای مصوت شروع می‌شود، پس an engineer."
+      },
+      {
+        "q": "I waited for ___ hour at the bank.",
+        "opts": [
+          "a",
+          "an"
+        ],
+        "a": 1,
+        "whyFa": "حرف h در hour خوانده نمی‌شود و صدای اول مصوت است، پس an."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I am student at a university.",
+          "I am a student at an university.",
+          "I am a student at a university."
+        ],
+        "a": 2,
+        "whyFa": "student به a نیاز دارد و university با صدای «یو» شروع می‌شود، پس a university."
+      },
+      {
+        "q": "My sister is ___.",
+        "opts": [
+          "nurse",
+          "an nurse",
+          "nurses",
+          "a nurse"
+        ],
+        "a": 3,
+        "whyFa": "برای شغل یک نفر a لازم است و nurse با صدای بی‌صدا شروع می‌شود."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "He has a big house in Karaj.",
+          "He has big house in Karaj.",
+          "He has an big house in Karaj."
+        ],
+        "a": 0,
+        "whyFa": "house مفرد و قابل‌شمارش است و big با صدای بی‌صدا شروع می‌شود، پس a."
+      },
+      {
+        "q": "It was ___ honest answer.",
+        "opts": [
+          "a",
+          "an"
+        ],
+        "a": 1,
+        "whyFa": "حرف h در honest خوانده نمی‌شود، پس an."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My brother is doctor and my sister is artist.",
+          "My brother is a doctor and my sister is a artist.",
+          "My brother is a doctor and my sister is an artist."
+        ],
+        "a": 2,
+        "whyFa": "هر دو شغل a/an لازم دارند و artist با صدای مصوت شروع می‌شود، پس an artist."
+      },
+      {
+        "q": "Tehran is ___.",
+        "opts": [
+          "very big city",
+          "a very big city",
+          "an very big city"
+        ],
+        "a": 1,
+        "whyFa": "قبل از «صفت + اسم مفرد» هم a لازم است و very با صدای بی‌صدا شروع می‌شود."
+      },
+      {
+        "q": "I need ___ umbrella. It's raining.",
+        "opts": [
+          "an",
+          "a"
+        ],
+        "a": 0,
+        "whyFa": "umbrella با صدای مصوت شروع می‌شود، پس an."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "She works for an European company.",
+          "She works for European company.",
+          "She works for a European company."
+        ],
+        "a": 2,
+        "whyFa": "European با صدای «یو» شروع می‌شود، پس a European."
+      }
+    ]
+  },
+  {
+    "id": "the",
+    "level": "A2",
+    "title": "the",
+    "titleFa": "کِی the بگوییم، کِی نگوییم؟",
+    "explainFa": "فارسی کلمه‌ای مثل the ندارد، برای همین فارسی‌زبان‌ها گاهی the را جا می‌اندازند و گاهی بی‌جا به کار می‌برند.\nthe را برای چیزی می‌گوییم که شنونده می‌داند کدام است: چیزی که قبلاً گفته‌ایم، چیزی که فقط یکی است (the sun) یا چیزی که مشخص شده است (the book on the table). اما وقتی درباره‌ی یک مفهوم یا یک اسم جمع به‌طور کلی حرف می‌زنیم، the نمی‌گوییم: Life is hard. / I like music.",
+    "rule": "Use the for specific or unique things the listener knows, but not for general ideas or for plural and uncountable nouns in a general sense.",
+    "examples": [
+      {
+        "wrong": "The life is hard sometimes.",
+        "right": "Life is hard sometimes."
+      },
+      {
+        "wrong": "I really like the pop music.",
+        "right": "I really like pop music."
+      },
+      {
+        "wrong": "I bought a book and a pen. A book is very interesting.",
+        "right": "I bought a book and a pen. The book is very interesting."
+      }
+    ],
+    "items": [
+      {
+        "q": "Look at ___! It's so bright tonight.",
+        "opts": [
+          "moon",
+          "a moon",
+          "the moon"
+        ],
+        "a": 2,
+        "whyFa": "ماه فقط یکی است و همه می‌دانیم کدام است، پس the moon."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I love the nature. I go hiking every weekend.",
+          "I love nature. I go hiking every weekend.",
+          "I love a nature. I go hiking every weekend."
+        ],
+        "a": 1,
+        "whyFa": "nature (طبیعت) وقتی به‌طور کلی گفته می‌شود the نمی‌گیرد."
+      },
+      {
+        "q": "I bought a shirt and a jacket yesterday. ___ shirt was very cheap.",
+        "opts": [
+          "The",
+          "A"
+        ],
+        "a": 0,
+        "whyFa": "پیراهن را قبلاً گفتیم و حالا مشخص است، پس The."
+      },
+      {
+        "q": "In my opinion, ___ is more important than money.",
+        "opts": [
+          "the health",
+          "health",
+          "a health"
+        ],
+        "a": 1,
+        "whyFa": "سلامتی یک مفهوم کلی است، پس بدون the می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I play the football every Friday.",
+          "I play a football every Friday.",
+          "I play football every Friday."
+        ],
+        "a": 2,
+        "whyFa": "قبل از اسم ورزش‌ها the نمی‌گذاریم."
+      },
+      {
+        "q": "What is ___ of Canada?",
+        "opts": [
+          "the capital",
+          "capital",
+          "a capital"
+        ],
+        "a": 0,
+        "whyFa": "هر کشور فقط یک پایتخت دارد، پس the capital."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Excuse me, where is nearest bank?",
+          "Excuse me, where is the nearest bank?",
+          "Excuse me, where is a nearest bank?"
+        ],
+        "a": 1,
+        "whyFa": "قبل از صفت عالی مثل nearest همیشه the می‌آید."
+      },
+      {
+        "q": "In general, ___ are friendlier than cats.",
+        "opts": [
+          "the dogs",
+          "a dogs",
+          "dogs"
+        ],
+        "a": 2,
+        "whyFa": "درباره‌ی سگ‌ها به‌طور کلی حرف می‌زنیم، پس اسم جمع بدون the می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "In my free time, I listen to the pop music.",
+          "In my free time, I listen to a pop music.",
+          "In my free time, I listen the pop music.",
+          "In my free time, I listen to pop music."
+        ],
+        "a": 3,
+        "whyFa": "موسیقی پاپ را به‌طور کلی می‌گوییم، پس the نمی‌خواهد و بعد از listen هم to لازم است."
+      },
+      {
+        "q": "I found this recipe on ___ internet.",
+        "opts": [
+          "the",
+          "a"
+        ],
+        "a": 0,
+        "whyFa": "اینترنت فقط یکی است، پس the internet."
+      }
+    ]
+  },
+  {
+    "id": "plural-numbers",
+    "level": "A1",
+    "title": "Plurals after numbers",
+    "titleFa": "سه کتاب = three books",
+    "explainFa": "در فارسی بعد از عدد اسم مفرد می‌آید: «سه کتاب» یا «چند دوست». اما در انگلیسی بعد از عددهای بیشتر از یک و کلماتی مثل many، a lot of و some (برای اسم‌های قابل‌شمارش) اسم باید جمع باشد: three books.\nکلمه‌ی people خودش جمع است، پس می‌گوییم people are. صفت‌ها هم در انگلیسی هیچ‌وقت جمع بسته نمی‌شوند: good books، نه goods books.",
+    "rule": "After numbers above one and words like many, a lot of and some, use a plural noun; people is plural, and adjectives never take -s.",
+    "examples": [
+      {
+        "wrong": "I have three book.",
+        "right": "I have three books."
+      },
+      {
+        "wrong": "Many people is waiting.",
+        "right": "Many people are waiting."
+      },
+      {
+        "wrong": "These are goods books.",
+        "right": "These are good books."
+      }
+    ],
+    "items": [
+      {
+        "q": "I have two ___ and one sister.",
+        "opts": [
+          "brother",
+          "brothers",
+          "brotheres"
+        ],
+        "a": 1,
+        "whyFa": "بعد از two اسم جمع می‌آید: brothers."
+      },
+      {
+        "q": "There are many ___ in this park.",
+        "opts": [
+          "trees",
+          "tree",
+          "a tree"
+        ],
+        "a": 0,
+        "whyFa": "بعد از many اسم قابل‌شمارش جمع می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Many people is waiting outside.",
+          "Many peoples is waiting outside.",
+          "Many people are waiting outside."
+        ],
+        "a": 2,
+        "whyFa": "people جمع است، پس فعل are می‌گیرد."
+      },
+      {
+        "q": "She bought five ___ of milk.",
+        "opts": [
+          "bottles",
+          "bottle",
+          "bottle's"
+        ],
+        "a": 0,
+        "whyFa": "بعد از five اسم جمع می‌آید: bottles."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "These are very goods books.",
+          "These are very good books.",
+          "These are very goods book."
+        ],
+        "a": 1,
+        "whyFa": "صفت در انگلیسی جمع بسته نمی‌شود، ولی اسم بعد از these باید جمع باشد."
+      },
+      {
+        "q": "We waited for three ___.",
+        "opts": [
+          "hour",
+          "houres",
+          "hours"
+        ],
+        "a": 2,
+        "whyFa": "بعد از three اسم جمع می‌آید و جمع hour می‌شود hours."
+      },
+      {
+        "q": "I have a lot of ___ in Canada.",
+        "opts": [
+          "friend",
+          "friends",
+          "a friend"
+        ],
+        "a": 1,
+        "whyFa": "بعد از a lot of اسم قابل‌شمارش جمع می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My son is ten years old.",
+          "My son is ten year old.",
+          "My son is ten years olds."
+        ],
+        "a": 0,
+        "whyFa": "بعد از ten باید years بگوییم و صفت old هیچ‌وقت s نمی‌گیرد."
+      },
+      {
+        "q": "The ___ are playing in the garden.",
+        "opts": [
+          "child",
+          "childs",
+          "children",
+          "childrens"
+        ],
+        "a": 2,
+        "whyFa": "جمع child بی‌قاعده است: children."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "There is 20 student in my class.",
+          "There are 20 student in my class.",
+          "There is 20 students in my class.",
+          "There are 20 students in my class."
+        ],
+        "a": 3,
+        "whyFa": "بعد از 20 اسم جمع می‌آید و برای اسم جمع are لازم است."
+      }
+    ]
+  },
+  {
+    "id": "do-questions",
+    "level": "A1",
+    "title": "Questions and negatives with do",
+    "titleFa": "سؤال و منفی با do / does / did",
+    "explainFa": "در فارسی برای سؤال کافی است لحن جمله را عوض کنیم («قهوه دوست داری؟») و برای منفی فقط «نـ» به فعل اضافه می‌کنیم. اما در انگلیسی برای سؤال و منفی کردن بیشتر فعل‌ها به do، does یا did نیاز داریم: Do you like coffee? / I don't like coffee.\nیادتان باشد بعد از do، does و did فعل اصلی همیشه به شکل ساده می‌آید: Did you go? (نه Did you went?)",
+    "rule": "Make questions and negatives of most verbs with do/does/did + the base form of the verb.",
+    "examples": [
+      {
+        "wrong": "You like coffee?",
+        "right": "Do you like coffee?"
+      },
+      {
+        "wrong": "Where you live?",
+        "right": "Where do you live?"
+      },
+      {
+        "wrong": "I no like fish.",
+        "right": "I don't like fish."
+      }
+    ],
+    "items": [
+      {
+        "q": "___ you like tea?",
+        "opts": [
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "a": 1,
+        "whyFa": "برای سؤال با فعل like از do کمک می‌گیریم و با you شکل Do درست است."
+      },
+      {
+        "q": "Where ___ your brother work?",
+        "opts": [
+          "do",
+          "is",
+          "does"
+        ],
+        "a": 2,
+        "whyFa": "your brother سوم‌شخص مفرد است، پس does."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Did you went to the party?",
+          "Do you went to the party?",
+          "Did you go to the party?"
+        ],
+        "a": 2,
+        "whyFa": "بعد از did فعل اصلی ساده می‌آید: go، نه went."
+      },
+      {
+        "q": "I ___ like fish.",
+        "opts": [
+          "don't",
+          "no",
+          "not"
+        ],
+        "a": 0,
+        "whyFa": "برای منفی کردن فعل like از don't استفاده می‌کنیم، نه no."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Where you live?",
+          "Where do you live?",
+          "Where you do live?"
+        ],
+        "a": 1,
+        "whyFa": "در سؤال، do قبل از فاعل می‌آید: Where do you live?"
+      },
+      {
+        "q": "She ___ speak French.",
+        "opts": [
+          "doesn't",
+          "don't",
+          "not"
+        ],
+        "a": 0,
+        "whyFa": "با she برای منفی از doesn't استفاده می‌کنیم."
+      },
+      {
+        "q": "What time ___ the train leave yesterday?",
+        "opts": [
+          "does",
+          "did",
+          "is"
+        ],
+        "a": 1,
+        "whyFa": "yesterday یعنی گذشته، پس did."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "We didn't saw him.",
+          "We not saw him.",
+          "We didn't see him.",
+          "We don't saw him."
+        ],
+        "a": 2,
+        "whyFa": "بعد از didn't فعل اصلی ساده می‌آید: see."
+      },
+      {
+        "q": "___ they live near here?",
+        "opts": [
+          "Do",
+          "Does",
+          "Are"
+        ],
+        "a": 0,
+        "whyFa": "با they برای سؤال از Do استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "What means this word?",
+          "What this word means?",
+          "What does this word means?",
+          "What does this word mean?"
+        ],
+        "a": 3,
+        "whyFa": "در سؤال با does فعل اصلی ساده می‌ماند: What does this word mean?"
+      }
+    ]
+  },
+  {
+    "id": "adjective-order",
+    "level": "A1",
+    "title": "Adjective + noun order",
+    "titleFa": "ماشین قرمز = red car",
+    "explainFa": "در فارسی با کسره‌ی اضافه، صفت و صاحب بعد از اسم می‌آیند: «ماشینِ قرمز»، «دوستِ من»، «ماشینِ علی». در انگلیسی ترتیب برعکس است: صفت قبل از اسم می‌آید (a red car) و صاحب هم قبل از اسم (my friend، Ali's car).\nاگر very هم داشته باشیم، ترتیب این است: a very good book.",
+    "rule": "Put adjectives and possessives before the noun: a red car, a very good book, my friend, Ali's car.",
+    "examples": [
+      {
+        "wrong": "I have a car red.",
+        "right": "I have a red car."
+      },
+      {
+        "wrong": "Friend my lives in Isfahan.",
+        "right": "My friend lives in Isfahan."
+      },
+      {
+        "wrong": "This is the car of Ali.",
+        "right": "This is Ali's car."
+      }
+    ],
+    "items": [
+      {
+        "q": "She has a ___.",
+        "opts": [
+          "dress blue",
+          "dress of blue",
+          "blue dress"
+        ],
+        "a": 2,
+        "whyFa": "در انگلیسی صفت قبل از اسم می‌آید: blue dress."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I read a book very good.",
+          "I read a good very book.",
+          "I read a very good book."
+        ],
+        "a": 2,
+        "whyFa": "ترتیب درست «a + very + صفت + اسم» است."
+      },
+      {
+        "q": "This is ___ phone.",
+        "opts": [
+          "of Ali",
+          "Ali's",
+          "Ali"
+        ],
+        "a": 1,
+        "whyFa": "برای مالکیت آدم‌ها از 's قبل از اسم استفاده می‌کنیم: Ali's phone."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My brother is a doctor.",
+          "Brother my is a doctor.",
+          "Brother of me is a doctor."
+        ],
+        "a": 0,
+        "whyFa": "my قبل از اسم می‌آید: My brother."
+      },
+      {
+        "q": "We stayed in a ___ hotel.",
+        "opts": [
+          "cheap very",
+          "very cheap",
+          "very cheaps"
+        ],
+        "a": 1,
+        "whyFa": "very قبل از صفت می‌آید و صفت هیچ‌وقت s جمع نمی‌گیرد."
+      },
+      {
+        "q": "I love ___ cooking.",
+        "opts": [
+          "my mother's",
+          "mother my",
+          "mother of my"
+        ],
+        "a": 0,
+        "whyFa": "صاحب قبل از اسم می‌آید: my mother's cooking (دست‌پخت مادرم)."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "We have a garden beautiful.",
+          "We have beautiful a garden.",
+          "We have a garden very beautiful.",
+          "We have a very beautiful garden."
+        ],
+        "a": 3,
+        "whyFa": "ترتیب درست «a + very + صفت + اسم» است: a very beautiful garden."
+      },
+      {
+        "q": "Tehran is a ___.",
+        "opts": [
+          "city big",
+          "big city",
+          "city very big"
+        ],
+        "a": 1,
+        "whyFa": "صفت قبل از اسم می‌آید: a big city."
+      },
+      {
+        "q": "Where is ___?",
+        "opts": [
+          "Sara's bag",
+          "the bag of Sara",
+          "bag Sara"
+        ],
+        "a": 0,
+        "whyFa": "برای مالکیت آدم‌ها 's را به اسم صاحب اضافه می‌کنیم و قبل از اسم می‌گذاریم: Sara's bag."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I bought a phone new.",
+          "I bought new a phone.",
+          "I bought a new phone."
+        ],
+        "a": 2,
+        "whyFa": "صفت new بعد از a و قبل از اسم می‌آید."
+      }
+    ]
+  },
+  {
+    "id": "third-person-s",
+    "level": "A1",
+    "title": "Third person -s",
+    "titleFa": "سوم‌شخص مفرد و s فعل",
+    "explainFa": "در زمان حال ساده‌ی انگلیسی فعل تقریباً تغییری نمی‌کند (I work، you work، they work)، برای همین فارسی‌زبان‌ها s سوم‌شخص را راحت فراموش می‌کنند. قانون ساده است: بعد از he، she، it یا یک نفر و یک چیز، به فعل s اضافه کنید: She works in a bank.\nدر منفی و سؤال، این s به does منتقل می‌شود و فعل اصلی ساده می‌ماند: He doesn't like tea. / Does he like tea?",
+    "rule": "In the present simple, add -s to the verb after he/she/it; after does/doesn't, the main verb has no -s.",
+    "examples": [
+      {
+        "wrong": "She work in a bank.",
+        "right": "She works in a bank."
+      },
+      {
+        "wrong": "He don't eat meat.",
+        "right": "He doesn't eat meat."
+      },
+      {
+        "wrong": "Does he likes football?",
+        "right": "Does he like football?"
+      }
+    ],
+    "items": [
+      {
+        "q": "My sister ___ in a hospital.",
+        "opts": [
+          "work",
+          "works",
+          "working"
+        ],
+        "a": 1,
+        "whyFa": "My sister یعنی she، پس فعل s می‌گیرد: works."
+      },
+      {
+        "q": "He ___ like coffee.",
+        "opts": [
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "a": 0,
+        "whyFa": "با he برای منفی از doesn't استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Do she live near you?",
+          "Does she live near you?",
+          "Does she lives near you?"
+        ],
+        "a": 1,
+        "whyFa": "با she از Does استفاده می‌کنیم و بعد از آن فعل اصلی بدون s می‌آید."
+      },
+      {
+        "q": "My father ___ TV every evening.",
+        "opts": [
+          "watch",
+          "watchs",
+          "watches"
+        ],
+        "a": 2,
+        "whyFa": "My father یعنی he، و فعلی که به ch ختم می‌شود es می‌گیرد: watches."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The shop opens at 9 a.m.",
+          "The shop open at 9 a.m.",
+          "The shop opening at 9 a.m."
+        ],
+        "a": 0,
+        "whyFa": "The shop یعنی it، پس فعل s می‌گیرد: opens."
+      },
+      {
+        "q": "Reza ___ two languages.",
+        "opts": [
+          "speak",
+          "speaks",
+          "speaking"
+        ],
+        "a": 1,
+        "whyFa": "Reza یعنی he، پس speaks."
+      },
+      {
+        "q": "___ your brother live in Tehran?",
+        "opts": [
+          "Do",
+          "Is",
+          "Does"
+        ],
+        "a": 2,
+        "whyFa": "your brother سوم‌شخص مفرد است، پس Does."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "She don't have a car.",
+          "She doesn't has a car.",
+          "She doesn't have a car.",
+          "She not have a car."
+        ],
+        "a": 2,
+        "whyFa": "با she از doesn't استفاده می‌کنیم و بعد از آن فعل اصلی ساده می‌آید: have."
+      },
+      {
+        "q": "It ___ a lot in winter here.",
+        "opts": [
+          "rains",
+          "rain",
+          "raining"
+        ],
+        "a": 0,
+        "whyFa": "It سوم‌شخص مفرد است، پس rains."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My son go to school by bus.",
+          "My son gos to school by bus.",
+          "My son going to school by bus.",
+          "My son goes to school by bus."
+        ],
+        "a": 3,
+        "whyFa": "My son یعنی he، پس goes (با es)."
+      }
+    ]
+  },
+  {
+    "id": "verb-pairs",
+    "level": "A2",
+    "title": "learn/teach, say/tell, borrow/lend",
+    "titleFa": "یک فعل فارسی، دو فعل انگلیسی",
+    "explainFa": "بعضی فعل‌های فارسی در انگلیسی دو معادل دارند و انتخاب درست به جهت کار بستگی دارد: «یاد دادن» = teach و «یاد گرفتن» = learn؛ «قرض دادن» = lend و «قرض گرفتن» = borrow؛ «آوردن» = bring و «بردن» = take.\nبعد از tell شخص مستقیم می‌آید (tell me)، ولی say و explain شخص را با to می‌گیرند (say to me، explain it to me). همچنین listen و watch برای گوش دادن و تماشا کردنِ با دقت هستند، ولی hear و see برای شنیدن و دیدنِ بی‌اختیار.",
+    "rule": "Choose the verb by direction and meaning: teach/learn, lend/borrow, bring/take, tell someone but say/explain something to someone.",
+    "examples": [
+      {
+        "wrong": "He learned me English.",
+        "right": "He taught me English."
+      },
+      {
+        "wrong": "Can you borrow me your pen?",
+        "right": "Can you lend me your pen?"
+      },
+      {
+        "wrong": "Please explain me this word.",
+        "right": "Please explain this word to me."
+      }
+    ],
+    "items": [
+      {
+        "q": "My father ___ me how to drive.",
+        "opts": [
+          "learned",
+          "taught",
+          "studied"
+        ],
+        "a": 1,
+        "whyFa": "«یاد دادن» = teach و گذشته‌ی آن taught است."
+      },
+      {
+        "q": "Can I ___ your car tomorrow?",
+        "opts": [
+          "borrow",
+          "lend",
+          "give"
+        ],
+        "a": 0,
+        "whyFa": "«قرض گرفتن» از کسی = borrow."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "She told me the truth.",
+          "She said me the truth.",
+          "She told to me the truth."
+        ],
+        "a": 0,
+        "whyFa": "بعد از tell شخص بدون to می‌آید و say me غلط است."
+      },
+      {
+        "q": "Could you ___ me some money until Friday?",
+        "opts": [
+          "borrow",
+          "take",
+          "lend"
+        ],
+        "a": 2,
+        "whyFa": "«قرض دادن» به کسی = lend."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Can you explain me this rule?",
+          "Can you explain this rule me?",
+          "Can you explain this rule to me?"
+        ],
+        "a": 2,
+        "whyFa": "explain شخص را با to می‌گیرد: explain something to someone."
+      },
+      {
+        "q": "I'm going out now. I'll ___ this letter to the post office.",
+        "opts": [
+          "bring",
+          "take"
+        ],
+        "a": 1,
+        "whyFa": "«بردن» از این‌جا به جای دیگر = take."
+      },
+      {
+        "q": "I usually ___ to music when I study.",
+        "opts": [
+          "listen",
+          "hear",
+          "watch"
+        ],
+        "a": 0,
+        "whyFa": "«گوش دادن» با دقت = listen to."
+      },
+      {
+        "q": "Suddenly, I ___ a strange noise outside.",
+        "opts": [
+          "listened",
+          "heard",
+          "watched"
+        ],
+        "a": 1,
+        "whyFa": "شنیدنِ بی‌اختیار و ناگهانی = hear، نه listen."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Can you say me your phone number?",
+          "Can you tell to me your phone number?",
+          "Can you tell me your phone number?"
+        ],
+        "a": 2,
+        "whyFa": "«به من بگو» = tell me و say me غلط است."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My teacher learned me a lot.",
+          "I learned a lot to my teacher.",
+          "I taught a lot from my teacher.",
+          "I learned a lot from my teacher."
+        ],
+        "a": 3,
+        "whyFa": "«یاد گرفتن از کسی» = learn from someone."
+      }
+    ]
+  },
+  {
+    "id": "make-do-turn",
+    "level": "A2",
+    "title": "make, do, take, turn on",
+    "titleFa": "ترجمه‌ی کلمه‌به‌کلمه‌ی فعل‌ها ممنوع!",
+    "explainFa": "در فارسی با چند فعل مثل «کردن»، «زدن» و «گرفتن» عبارت‌های زیادی می‌سازیم، اما ترجمه‌ی کلمه‌به‌کلمه‌ی آن‌ها در انگلیسی اغلب غلط است. مثلاً «چراغ را روشن کن» می‌شود turn on the light (نه open the light) و «دوش گرفتن» می‌شود take a shower.\nبه‌طور کلی make برای ساختن و درست کردن چیزی است (make a mistake، make dinner) و do برای کارها و وظایف (do homework، do the dishes). بهتر است این ترکیب‌ها را یکجا حفظ کنید.",
+    "rule": "Learn verb + noun combinations as fixed phrases: make a mistake, do homework, turn on the light, take a shower, have breakfast, get married.",
+    "examples": [
+      {
+        "wrong": "Please open the light.",
+        "right": "Please turn on the light."
+      },
+      {
+        "wrong": "I did a big mistake.",
+        "right": "I made a big mistake."
+      },
+      {
+        "wrong": "I make my homework every night.",
+        "right": "I do my homework every night."
+      }
+    ],
+    "items": [
+      {
+        "q": "It's dark. Can you ___ the light, please?",
+        "opts": [
+          "open",
+          "turn on",
+          "make on"
+        ],
+        "a": 1,
+        "whyFa": "«چراغ را روشن کردن» = turn on the light، نه open."
+      },
+      {
+        "q": "I always ___ my homework after dinner.",
+        "opts": [
+          "do",
+          "make",
+          "take"
+        ],
+        "a": 0,
+        "whyFa": "برای تکلیف و وظیفه از do استفاده می‌کنیم: do homework."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Sorry, I did a mistake.",
+          "Sorry, I took a mistake.",
+          "Sorry, I made a mistake."
+        ],
+        "a": 2,
+        "whyFa": "«اشتباه کردن» = make a mistake."
+      },
+      {
+        "q": "I usually ___ a shower in the morning.",
+        "opts": [
+          "make",
+          "do",
+          "take"
+        ],
+        "a": 2,
+        "whyFa": "«دوش گرفتن» = take a shower."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Can you make a photo of us?",
+          "Can you take a photo of us?",
+          "Can you throw a photo of us?"
+        ],
+        "a": 1,
+        "whyFa": "«عکس گرفتن» = take a photo."
+      },
+      {
+        "q": "Please ___ the TV. I want to sleep.",
+        "opts": [
+          "turn off",
+          "close",
+          "turn on"
+        ],
+        "a": 0,
+        "whyFa": "«تلویزیون را خاموش کردن» = turn off the TV، نه close."
+      },
+      {
+        "q": "We ___ breakfast at 7 every day.",
+        "opts": [
+          "drink",
+          "do",
+          "have"
+        ],
+        "a": 2,
+        "whyFa": "«صبحانه خوردن» = have breakfast."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My sister got married last year.",
+          "My sister made marriage last year.",
+          "My sister did marriage last year."
+        ],
+        "a": 0,
+        "whyFa": "«ازدواج کردن» = get married."
+      },
+      {
+        "q": "Can you ___ me a favor?",
+        "opts": [
+          "make",
+          "do",
+          "give"
+        ],
+        "a": 1,
+        "whyFa": "«لطفی در حق کسی کردن» = do someone a favor."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Don't do noise. The baby is sleeping.",
+          "Don't take noise. The baby is sleeping.",
+          "Don't have noise. The baby is sleeping.",
+          "Don't make noise. The baby is sleeping."
+        ],
+        "a": 3,
+        "whyFa": "«سر و صدا کردن» = make noise."
+      }
+    ]
+  },
+  {
+    "id": "prepositions",
+    "level": "B1",
+    "title": "Prepositions after words",
+    "titleFa": "حرف اضافه: ترجمه‌ی مستقیم ممنوع!",
+    "explainFa": "حرف اضافه‌ها در فارسی و انگلیسی همیشه با هم جور نیستند. ما می‌گوییم «با او ازدواج کرد» و «بستگی دارد به»، اما در انگلیسی married to و depend on درست است.\nبهترین راه این است که هر فعل یا صفت را همراه حرف اضافه‌اش حفظ کنید: interested in، good at، afraid of، listen to. برای زمان هم on Monday، in 2020 و at night می‌گوییم، و برای رسیدن arrive in (شهر یا کشور) و arrive at (یک مکان مشخص)؛ arrive to همیشه غلط است.",
+    "rule": "Learn each verb or adjective together with its own preposition (married to, depend on, interested in, good at, arrive in/at) instead of translating from Persian.",
+    "examples": [
+      {
+        "wrong": "She is married with a doctor.",
+        "right": "She is married to a doctor."
+      },
+      {
+        "wrong": "It depends to the weather.",
+        "right": "It depends on the weather."
+      },
+      {
+        "wrong": "We arrived to London late at night.",
+        "right": "We arrived in London late at night."
+      }
+    ],
+    "items": [
+      {
+        "q": "My cousin has been married ___ an engineer for ten years.",
+        "opts": [
+          "with",
+          "to",
+          "by"
+        ],
+        "a": 1,
+        "whyFa": "در انگلیسی married to درست است، نه married with."
+      },
+      {
+        "q": "Whether we travel next month depends ___ the price of the tickets.",
+        "opts": [
+          "to",
+          "from",
+          "on"
+        ],
+        "a": 2,
+        "whyFa": "«بستگی داشتن به» = depend on."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I'm very interested in learning about other cultures.",
+          "I'm very interested about learning about other cultures.",
+          "I'm very interested for learning about other cultures."
+        ],
+        "a": 0,
+        "whyFa": "بعد از interested همیشه in می‌آید."
+      },
+      {
+        "q": "Our flight arrived ___ Toronto two hours late.",
+        "opts": [
+          "in",
+          "to",
+          "on"
+        ],
+        "a": 0,
+        "whyFa": "برای رسیدن به یک شهر از arrive in استفاده می‌کنیم و arrive to غلط است."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "My son is afraid from the dark.",
+          "My son is afraid of the dark.",
+          "My son is afraid to the dark."
+        ],
+        "a": 1,
+        "whyFa": "«ترسیدن از» = afraid of."
+      },
+      {
+        "q": "I usually study late ___ night, when the house is quiet.",
+        "opts": [
+          "in",
+          "on",
+          "at"
+        ],
+        "a": 2,
+        "whyFa": "برای «شب» از at night استفاده می‌کنیم."
+      },
+      {
+        "q": "She is really good ___ solving problems, so she got the job.",
+        "opts": [
+          "on",
+          "at",
+          "to"
+        ],
+        "a": 1,
+        "whyFa": "«در کاری مهارت داشتن» = good at."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I was angry with my brother because he lied to me.",
+          "I was angry on my brother because he lied to me.",
+          "I was angry to my brother because he lied to me."
+        ],
+        "a": 0,
+        "whyFa": "«از دست کسی عصبانی بودن» = angry with someone."
+      },
+      {
+        "q": "The new course starts ___ Monday, 5 September.",
+        "opts": [
+          "in",
+          "at",
+          "on"
+        ],
+        "a": 2,
+        "whyFa": "برای روزهای هفته و تاریخ از on استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Please listen me carefully before you decide.",
+          "Please listen at me carefully before you decide.",
+          "Please listen from me carefully before you decide.",
+          "Please listen to me carefully before you decide."
+        ],
+        "a": 3,
+        "whyFa": "«گوش دادن به» = listen to."
+      }
+    ]
+  },
+  {
+    "id": "uncountable",
+    "level": "B1",
+    "title": "Uncountable nouns",
+    "titleFa": "اسم‌های غیرقابل‌شمارش",
+    "explainFa": "در فارسی کلمه‌هایی مثل «توصیه»، «وسیله» یا «تحقیق» را راحت می‌شماریم (یک توصیه، چند وسیله)، برای همین فارسی‌زبان‌ها می‌گویند an advice یا furnitures. اما در انگلیسی کلماتی مثل information، advice، furniture، luggage، homework، equipment و research غیرقابل‌شمارش هستند: نه s جمع می‌گیرند و نه a.\nبرای شمردن آن‌ها از a piece of استفاده کنید: a piece of advice. کلمه‌ی news هم با اینکه s دارد مفرد است: The news is good.",
+    "rule": "Uncountable nouns like information, advice, furniture and luggage take no -s and no a/an; count them with a piece of, and use a singular verb with news.",
+    "examples": [
+      {
+        "wrong": "Can you give me an advice?",
+        "right": "Can you give me a piece of advice?"
+      },
+      {
+        "wrong": "We bought new furnitures for the flat.",
+        "right": "We bought new furniture for the flat."
+      },
+      {
+        "wrong": "The news are very bad today.",
+        "right": "The news is very bad today."
+      }
+    ],
+    "items": [
+      {
+        "q": "Could you give me some ___ about the visa process?",
+        "opts": [
+          "informations",
+          "information",
+          "an information"
+        ],
+        "a": 1,
+        "whyFa": "information غیرقابل‌شمارش است و s یا an نمی‌گیرد."
+      },
+      {
+        "q": "My teacher gave me ___ about the IELTS writing test.",
+        "opts": [
+          "a useful advice",
+          "useful advices",
+          "some useful advice"
+        ],
+        "a": 2,
+        "whyFa": "advice غیرقابل‌شمارش است، پس some advice درست است، نه an advice یا advices."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The news is not good, I'm afraid.",
+          "The news are not good, I'm afraid.",
+          "The newses are not good, I'm afraid."
+        ],
+        "a": 0,
+        "whyFa": "news با اینکه s دارد مفرد است، پس فعل is می‌گیرد."
+      },
+      {
+        "q": "How much ___ are you taking on the plane?",
+        "opts": [
+          "luggage",
+          "luggages",
+          "a luggage"
+        ],
+        "a": 0,
+        "whyFa": "luggage غیرقابل‌شمارش است و با how much بدون s می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "We need to buy some furnitures for our new flat.",
+          "We need to buy a furniture for our new flat.",
+          "We need to buy some furniture for our new flat."
+        ],
+        "a": 2,
+        "whyFa": "furniture غیرقابل‌شمارش است و s یا a نمی‌گیرد."
+      },
+      {
+        "q": "The children have too much ___ every night.",
+        "opts": [
+          "homeworks",
+          "homework",
+          "a homework"
+        ],
+        "a": 1,
+        "whyFa": "homework غیرقابل‌شمارش است و با too much بدون s می‌آید."
+      },
+      {
+        "q": "Scientists have done a lot of ___ on this disease.",
+        "opts": [
+          "research",
+          "researches",
+          "a research"
+        ],
+        "a": 0,
+        "whyFa": "research غیرقابل‌شمارش است و s یا a نمی‌گیرد."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The gym has a lot of new equipments.",
+          "The gym has a lot of new equipment.",
+          "The gym has many new equipment."
+        ],
+        "a": 1,
+        "whyFa": "equipment غیرقابل‌شمارش است، پس a lot of equipment بدون s درست است."
+      },
+      {
+        "q": "She gave me a good ___ of advice before my job interview.",
+        "opts": [
+          "number",
+          "many",
+          "piece"
+        ],
+        "a": 2,
+        "whyFa": "برای شمردن advice از a piece of استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "There is many traffic in the city today.",
+          "There are many traffics in the city today.",
+          "There are a lot of traffic in the city today.",
+          "There is a lot of traffic in the city today."
+        ],
+        "a": 3,
+        "whyFa": "traffic غیرقابل‌شمارش است، پس با is و a lot of می‌آید، نه many."
+      }
+    ]
+  },
+  {
+    "id": "present-perfect",
+    "level": "B1",
+    "title": "Present perfect vs past simple",
+    "titleFa": "حال کامل یا گذشته‌ی ساده؟",
+    "explainFa": "در فارسی می‌گوییم «دو سال است که اینجا زندگی می‌کنم» و فعل حال است، برای همین فارسی‌زبان‌ها می‌گویند I live here for two years. اما در انگلیسی برای کاری که از گذشته شروع شده و هنوز ادامه دارد، حال کامل با for یا since لازم است: I have lived here for two years.\nاز طرف دیگر، وقتی زمان مشخصی در گذشته را می‌گوییم (yesterday، last year، in 2019، two days ago)، فقط گذشته‌ی ساده درست است: I moved here in 2019، نه I have moved here in 2019.",
+    "rule": "Use the present perfect with for/since for situations that continue until now, and the past simple with finished time expressions like yesterday, last year or in 2019.",
+    "examples": [
+      {
+        "wrong": "I live here for two years.",
+        "right": "I have lived here for two years."
+      },
+      {
+        "wrong": "I have seen him yesterday.",
+        "right": "I saw him yesterday."
+      },
+      {
+        "wrong": "She works at this company since 2018.",
+        "right": "She has worked at this company since 2018."
+      }
+    ],
+    "items": [
+      {
+        "q": "I ___ in Canada since 2021, and I really like it here.",
+        "opts": [
+          "live",
+          "lived",
+          "have lived"
+        ],
+        "a": 2,
+        "whyFa": "since نشان می‌دهد کار از گذشته شروع شده و هنوز ادامه دارد، پس have lived."
+      },
+      {
+        "q": "We ___ the new museum last weekend. It was amazing.",
+        "opts": [
+          "visited",
+          "have visited",
+          "have been visiting"
+        ],
+        "a": 0,
+        "whyFa": "last weekend زمان مشخصی در گذشته است، پس گذشته‌ی ساده (visited) لازم است."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I have finished my degree in 2019.",
+          "I finished my degree in 2019.",
+          "I have been finishing my degree in 2019."
+        ],
+        "a": 1,
+        "whyFa": "in 2019 زمان مشخصی در گذشته است، پس فقط گذشته‌ی ساده درست است."
+      },
+      {
+        "q": "My brother ___ as a nurse for five years now.",
+        "opts": [
+          "works",
+          "worked",
+          "is working",
+          "has worked"
+        ],
+        "a": 3,
+        "whyFa": "کار از پنج سال پیش شروع شده و هنوز ادامه دارد، پس has worked."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "How long have you lived in this city?",
+          "How long are you living in this city?",
+          "How long do you live in this city?"
+        ],
+        "a": 0,
+        "whyFa": "برای «چند وقت است که…» از How long have you…? استفاده می‌کنیم."
+      },
+      {
+        "q": "She ___ her keys yesterday, so she couldn't get into the house.",
+        "opts": [
+          "has lost",
+          "lost",
+          "has been losing"
+        ],
+        "a": 1,
+        "whyFa": "yesterday زمان مشخصی در گذشته است، پس lost."
+      },
+      {
+        "q": "I haven't seen my parents ___ last summer.",
+        "opts": [
+          "since",
+          "for",
+          "ago"
+        ],
+        "a": 0,
+        "whyFa": "قبل از نقطه‌ی شروع زمان (last summer) از since استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I know him for ten years. We're best friends.",
+          "I am knowing him for ten years. We're best friends.",
+          "I have known him for ten years. We're best friends."
+        ],
+        "a": 2,
+        "whyFa": "دوستی از ده سال پیش شروع شده و هنوز ادامه دارد، پس have known لازم است."
+      },
+      {
+        "q": "They have been married ___ fifteen years.",
+        "opts": [
+          "since",
+          "for",
+          "from"
+        ],
+        "a": 1,
+        "whyFa": "قبل از طول زمان (fifteen years) از for استفاده می‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Have you seen the news yesterday?",
+          "Have you been seeing the news yesterday?",
+          "Did you see the news yesterday?"
+        ],
+        "a": 2,
+        "whyFa": "yesterday زمان مشخصی در گذشته است، پس Did you see…? درست است."
+      }
+    ]
+  },
+  {
+    "id": "negative-concord",
+    "level": "B1",
+    "title": "Only one negative",
+    "titleFa": "فقط یک منفی در جمله",
+    "explainFa": "در فارسی منفی دوتایی کاملاً طبیعی است: «هیچ‌کس نیامد» یا «هیچ‌چیز ندیدم» (هم «هیچ» منفی است و هم فعل). اما در انگلیسی استاندارد در هر جمله فقط یک کلمه‌ی منفی می‌آید.\nیا فعل را منفی کنید و از any استفاده کنید (I didn't see anybody)، یا فعل را مثبت نگه دارید و از nobody، nothing یا never استفاده کنید (I saw nobody). کلماتی مثل nobody و never خودشان منفی هستند و not لازم ندارند.",
+    "rule": "Use only one negative word in a clause: either not + any-word (didn't see anybody) or a no-word with a positive verb (saw nobody).",
+    "examples": [
+      {
+        "wrong": "Nobody didn't come to the meeting.",
+        "right": "Nobody came to the meeting."
+      },
+      {
+        "wrong": "I didn't see nobody at the station.",
+        "right": "I didn't see anybody at the station."
+      },
+      {
+        "wrong": "He doesn't never eat breakfast.",
+        "right": "He never eats breakfast."
+      }
+    ],
+    "items": [
+      {
+        "q": "I looked everywhere, but I couldn't find ___.",
+        "opts": [
+          "nothing",
+          "none",
+          "anything"
+        ],
+        "a": 2,
+        "whyFa": "couldn't خودش منفی است، پس بعد از آن anything می‌آید، نه nothing."
+      },
+      {
+        "q": "I was alone all day because ___ came to visit me.",
+        "opts": [
+          "nobody",
+          "anybody",
+          "somebody"
+        ],
+        "a": 0,
+        "whyFa": "فعل came مثبت است و معنی «هیچ‌کس» را خود nobody می‌دهد."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Nobody didn't answer the phone.",
+          "Anybody didn't answer the phone.",
+          "Nobody answered the phone."
+        ],
+        "a": 2,
+        "whyFa": "nobody خودش منفی است، پس فعل نباید منفی شود."
+      },
+      {
+        "q": "My grandfather has ___ used a smartphone.",
+        "opts": [
+          "ever",
+          "never",
+          "not never"
+        ],
+        "a": 1,
+        "whyFa": "never خودش منفی است و not لازم ندارد؛ ever هم در جمله‌ی مثبت خبری این معنی را نمی‌دهد."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I didn't say anything to the police.",
+          "I didn't say nothing to the police.",
+          "I not said anything to the police."
+        ],
+        "a": 0,
+        "whyFa": "didn't منفی است، پس anything می‌آید، نه nothing."
+      },
+      {
+        "q": "There isn't ___ milk left in the fridge.",
+        "opts": [
+          "no",
+          "any",
+          "none"
+        ],
+        "a": 1,
+        "whyFa": "isn't منفی است، پس any می‌آید."
+      },
+      {
+        "q": "She doesn't ___ go to the cinema.",
+        "opts": [
+          "never",
+          "no",
+          "ever"
+        ],
+        "a": 2,
+        "whyFa": "doesn't منفی است، پس ever می‌آید، نه never."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "We don't have no time, so we must hurry.",
+          "We have no time, so we must hurry.",
+          "We haven't no time, so we must hurry."
+        ],
+        "a": 1,
+        "whyFa": "no خودش منفی است، پس فعل have مثبت می‌ماند."
+      },
+      {
+        "q": "Sorry, I don't know ___ about this topic.",
+        "opts": [
+          "anything",
+          "nothing",
+          "no"
+        ],
+        "a": 0,
+        "whyFa": "don't منفی است، پس anything می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Nobody never helps me with the housework.",
+          "Nobody doesn't help me with the housework.",
+          "Anybody helps me with the housework.",
+          "Nobody ever helps me with the housework."
+        ],
+        "a": 3,
+        "whyFa": "nobody منفی است، پس با فعل مثبت و ever می‌آید."
+      }
+    ]
+  },
+  {
+    "id": "resumptive-pronoun",
+    "level": "B1",
+    "title": "No extra pronoun after who/which/that",
+    "titleFa": "کتابی که خریدمش = the book that I bought",
+    "explainFa": "در فارسی در جمله‌های «که»دار معمولاً ضمیر را دوباره می‌آوریم: «کتابی که خریدمش» یا «مردی که با او صحبت کردم». اما در انگلیسی who، which و that خودشان جای آن ضمیر را می‌گیرند، پس نباید it، him، her یا them را دوباره بیاوریم.\nدرست: The book that I bought. / The man who I talked to.",
+    "rule": "In a relative clause, who/which/that already replaces the pronoun, so don't add it, him, her or them again.",
+    "examples": [
+      {
+        "wrong": "The book that I bought it is very interesting.",
+        "right": "The book that I bought is very interesting."
+      },
+      {
+        "wrong": "The man who I talked to him was very helpful.",
+        "right": "The man who I talked to was very helpful."
+      },
+      {
+        "wrong": "This is the city where I was born there.",
+        "right": "This is the city where I was born."
+      }
+    ],
+    "items": [
+      {
+        "q": "The laptop that I ___ last month has already stopped working.",
+        "opts": [
+          "bought it",
+          "bought",
+          "buy it"
+        ],
+        "a": 1,
+        "whyFa": "that جای it را گرفته است، پس it را اضافه نمی‌کنیم."
+      },
+      {
+        "q": "The woman who ___ yesterday is my new manager.",
+        "opts": [
+          "you met her",
+          "you met him",
+          "you met"
+        ],
+        "a": 2,
+        "whyFa": "who جای ضمیر مفعولی را گرفته است، پس her یا him اضافه نمی‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The house which we rented last year was very old.",
+          "The house which we rented it last year was very old.",
+          "The house which we rented them last year was very old."
+        ],
+        "a": 0,
+        "whyFa": "which جای it را گرفته است، پس ضمیر را تکرار نمی‌کنیم."
+      },
+      {
+        "q": "Is this the bag that you ___?",
+        "opts": [
+          "are looking for",
+          "are looking for it",
+          "look for it"
+        ],
+        "a": 0,
+        "whyFa": "that جای it را گرفته است، پس جمله با are looking for تمام می‌شود."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The students who I teach them are very hard-working.",
+          "The students who I teach they are very hard-working.",
+          "The students who I teach are very hard-working."
+        ],
+        "a": 2,
+        "whyFa": "who جای them را گرفته است، پس ضمیر اضافه غلط است."
+      },
+      {
+        "q": "Tehran is the city where I ___.",
+        "opts": [
+          "was born there",
+          "was born",
+          "born there"
+        ],
+        "a": 1,
+        "whyFa": "where خودش یعنی «آنجا»، پس there را تکرار نمی‌کنیم."
+      },
+      {
+        "q": "The film which we ___ last night was too long.",
+        "opts": [
+          "watched",
+          "watched it",
+          "watch it"
+        ],
+        "a": 0,
+        "whyFa": "which جای it را گرفته است، پس فقط watched می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "The man who I spoke to him at the bank was very helpful.",
+          "The man who I spoke to at the bank was very helpful.",
+          "The man who I spoke him at the bank was very helpful."
+        ],
+        "a": 1,
+        "whyFa": "who جای him را گرفته است، پس فقط spoke to می‌آید."
+      },
+      {
+        "q": "The doctor who ___ me was very kind.",
+        "opts": [
+          "she helped",
+          "he helped",
+          "helped"
+        ],
+        "a": 2,
+        "whyFa": "who خودش فاعل است، پس she یا he اضافه نمی‌کنیم."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "This is the friend that I told you about him.",
+          "This is the friend that I told you him.",
+          "This is the friend who I told you about her.",
+          "This is the friend that I told you about."
+        ],
+        "a": 3,
+        "whyFa": "that جای ضمیر را گرفته است، پس جمله با about تمام می‌شود."
+      }
+    ]
+  },
+  {
+    "id": "indirect-questions",
+    "level": "B2",
+    "title": "Indirect questions",
+    "titleFa": "ترتیب کلمات در سؤال غیرمستقیم",
+    "explainFa": "در فارسی ترتیب کلمات در سؤال و جمله‌ی خبری تقریباً یکی است، پس «بانک کجاست؟» و «می‌دانید بانک کجاست؟» فقط در شروع جمله فرق دارند. اما در انگلیسی وقتی سؤال داخل جمله‌ی دیگری می‌آید (Do you know…، Can you tell me…، I wonder…)، ترتیب کلمات مثل جمله‌ی خبری می‌شود: فاعل قبل از فعل، و بدون do، does یا did.\nاین ساختار برای مکالمه‌ی مؤدبانه، بخش Speaking آیلتس و نامه‌های رسمی خیلی مهم است. برای سؤال‌های بله/خیر هم از if یا whether استفاده کنید: Could you tell me if the office is open?",
+    "rule": "In indirect questions, use statement word order (subject + verb) without do/does/did, and use if/whether for yes/no questions.",
+    "examples": [
+      {
+        "wrong": "Do you know where is the bank?",
+        "right": "Do you know where the bank is?"
+      },
+      {
+        "wrong": "Can you tell me what time does the exam start?",
+        "right": "Can you tell me what time the exam starts?"
+      },
+      {
+        "wrong": "I would like to know when will my application be processed.",
+        "right": "I would like to know when my application will be processed."
+      }
+    ],
+    "items": [
+      {
+        "q": "Could you tell me where ___?",
+        "opts": [
+          "the station is",
+          "is the station",
+          "does the station"
+        ],
+        "a": 0,
+        "whyFa": "در سؤال غیرمستقیم فاعل قبل از فعل می‌آید: the station is."
+      },
+      {
+        "q": "I was wondering if ___ me with my application.",
+        "opts": [
+          "could you help",
+          "can you helping",
+          "you could help"
+        ],
+        "a": 2,
+        "whyFa": "بعد از if ترتیب جمله‌ی خبری لازم است: you could help."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Do you know what time does the library close?",
+          "Do you know what time closes the library?",
+          "Do you know what time the library closes?"
+        ],
+        "a": 2,
+        "whyFa": "در سؤال غیرمستقیم does حذف می‌شود و فعل s می‌گیرد: the library closes."
+      },
+      {
+        "q": "I would be grateful if you could let me know when ___.",
+        "opts": [
+          "will the refund arrive",
+          "the refund will arrive",
+          "does the refund arrive"
+        ],
+        "a": 1,
+        "whyFa": "در سؤال غیرمستقیم ترتیب جمله‌ی خبری لازم است: the refund will arrive."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Can you tell me how much does this course cost?",
+          "Can you tell me how much this course costs?",
+          "Can you tell me how much costs this course?"
+        ],
+        "a": 1,
+        "whyFa": "does حذف می‌شود و فعل s می‌گیرد: this course costs."
+      },
+      {
+        "q": "Could you tell me ___ the office is open on Saturdays?",
+        "opts": [
+          "whether",
+          "does",
+          "do"
+        ],
+        "a": 0,
+        "whyFa": "برای سؤال بله/خیر غیرمستقیم از whether یا if استفاده می‌کنیم."
+      },
+      {
+        "q": "I'd like to know why ___ cancelled.",
+        "opts": [
+          "my flight was",
+          "was my flight",
+          "did my flight"
+        ],
+        "a": 0,
+        "whyFa": "در سؤال غیرمستقیم فاعل (my flight) قبل از فعل (was) می‌آید."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "I have no idea where did he go.",
+          "I have no idea where he went.",
+          "I have no idea where went he."
+        ],
+        "a": 1,
+        "whyFa": "did حذف می‌شود و فعل به شکل گذشته می‌آید: where he went."
+      },
+      {
+        "q": "Can you remember what ___ at the meeting?",
+        "opts": [
+          "did she say",
+          "said she",
+          "she said"
+        ],
+        "a": 2,
+        "whyFa": "did حذف می‌شود و ترتیب خبری می‌آید: what she said."
+      },
+      {
+        "q": "Which sentence is correct?",
+        "opts": [
+          "Please let me know when can I collect my visa.",
+          "Please let me know when do I collect my visa.",
+          "Please let me know when I collect can my visa.",
+          "Please let me know when I can collect my visa."
+        ],
+        "a": 3,
+        "whyFa": "در سؤال غیرمستقیم فاعل قبل از فعل کمکی می‌آید: when I can collect."
+      }
+    ]
+  }
+]
