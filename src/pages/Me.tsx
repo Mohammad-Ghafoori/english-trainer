@@ -4,10 +4,14 @@ import { Btn, Card, Chip, Fa, Icon, Progress, Segmented, Title } from '../compon
 import { ALL_WORDS, levelStats, TRAPS, vocabLevel } from '../data/words';
 import { SOUND_SETS } from '../data/sounds';
 import { accuracy } from '../lib/plan';
-import { exportJSON, importJSON, resetAll, streak, update, useApp, type Accent, type Theme } from '../lib/store';
+import { exportJSON, importJSON, resetAll, streak, updateProfile, useApp, type Accent, type Theme } from '../lib/store';
 import { canRecognize, canSpeak, speak, useVoices } from '../lib/speech';
 import { addDays, dayKey, formatDuration } from '../lib/util';
 import { href } from '../lib/router';
+import { cloudEnabled, displayName } from '../lib/supabase';
+import { changePassword, logout, useAccountEmail } from '../lib/auth';
+import { syncNow, useSyncStatus } from '../lib/sync';
+import { SyncBadge } from '../components/SyncBadge';
 
 export function Me() {
   const s = useApp();
@@ -113,13 +117,77 @@ export function Me() {
   );
 }
 
+function Account() {
+  const email = useAccountEmail();
+  const sync = useSyncStatus();
+  const [pw, setPw] = useState('');
+  const [pwMsg, setPwMsg] = useState('');
+  const [showPw, setShowPw] = useState(false);
+  const ago = sync.lastSync ? Math.max(0, Math.round((Date.now() - sync.lastSync) / 60000)) : null;
+
+  async function savePassword(e: React.FormEvent) {
+    e.preventDefault();
+    if (pw.length < 6) {
+      setPwMsg('At least 6 characters.');
+      return;
+    }
+    try {
+      await changePassword(pw);
+      setPw('');
+      setShowPw(false);
+      setPwMsg('Password changed ✓');
+    } catch (err) {
+      setPwMsg((err as Error).message);
+    }
+  }
+
+  return (
+    <>
+      <Title en="Account" fa="حساب کاربری" level={2} />
+      <Card>
+        <div className="row-between">
+          <div>
+            <div className="small muted">Logged in as</div>
+            <strong className="account-name">{displayName(email) || '…'}</strong>
+          </div>
+          <SyncBadge status={sync} />
+        </div>
+        <Fa block className="small muted">
+          پیشرفت شما خودکار در فضای ابری ذخیره می‌شود و روی همه‌ی دستگاه‌هایی که با این حساب وارد شوید یکسان است. بدون اینترنت هم می‌توانید تمرین کنید؛ بعداً همگام می‌شود.
+          {ago !== null && ` (آخرین همگام‌سازی: ${ago === 0 ? 'همین الان' : `${ago} دقیقه پیش`})`}
+        </Fa>
+        <div className="row">
+          <Btn onClick={() => void syncNow()} disabled={sync.state === 'syncing'}>
+            Sync now
+          </Btn>
+          <Btn variant="ghost" onClick={() => setShowPw(!showPw)}>
+            Change password
+          </Btn>
+          <Btn variant="danger" onClick={() => void logout()}>
+            Log out
+          </Btn>
+        </div>
+        {showPw && (
+          <form className="type-row" onSubmit={savePassword}>
+            <input className="input" type="password" placeholder="New password" value={pw} onChange={(e) => setPw(e.target.value)} autoComplete="new-password" dir="ltr" />
+            <Btn variant="primary" type="submit">
+              Save
+            </Btn>
+          </form>
+        )}
+        {pwMsg && <Chip tone="accent">{pwMsg}</Chip>}
+      </Card>
+    </>
+  );
+}
+
 function Settings() {
   const s = useApp();
   const p = s.profile;
   const voices = useVoices(p.accent);
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState('');
-  const set = (patch: Partial<typeof p>) => update((d) => Object.assign(d.profile, patch));
+  const set = (patch: Partial<typeof p>) => updateProfile(patch);
 
   function download() {
     const blob = new Blob([exportJSON()], { type: 'application/json' });
@@ -141,6 +209,7 @@ function Settings() {
 
   return (
     <>
+      {cloudEnabled && <Account />}
       <Title en="Settings" fa="تنظیمات" level={2} />
       <Card>
         <div className="setting">
@@ -222,7 +291,9 @@ function Settings() {
       <Card>
         <h3>Your data</h3>
         <Fa block className="small muted">
-          پیشرفت شما فقط روی همین دستگاه ذخیره می‌شود. برای انتقال بین گوشی و کامپیوتر: اینجا «Export» بزنید، فایل را به دستگاه دیگر بفرستید و آنجا «Import» کنید.
+          {cloudEnabled
+            ? 'پیشرفت شما خودکار همگام می‌شود. «Export» یک فایل پشتیبان روی همین دستگاه می‌سازد. «Reset everything» پیشرفت را روی همه‌ی دستگاه‌های این حساب پاک می‌کند.'
+            : 'پیشرفت شما فقط روی همین دستگاه ذخیره می‌شود. برای انتقال بین گوشی و کامپیوتر: اینجا «Export» بزنید، فایل را به دستگاه دیگر بفرستید و آنجا «Import» کنید.'}
         </Fa>
         <div className="row">
           <Btn onClick={download}>
@@ -233,7 +304,7 @@ function Settings() {
           <Btn
             variant="danger"
             onClick={() => {
-              if (confirm('Delete ALL progress on this device? This cannot be undone. (Export a backup first.)')) resetAll();
+              if (confirm(cloudEnabled ? 'Delete ALL progress for this account, on every device? This cannot be undone. (Export a backup first.)' : 'Delete ALL progress on this device? This cannot be undone. (Export a backup first.)')) resetAll();
             }}
           >
             Reset everything

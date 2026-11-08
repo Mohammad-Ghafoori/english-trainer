@@ -50,6 +50,12 @@ export interface WritingSample {
 export interface AppState {
   v: 1;
   createdAt: string;
+  /** Logged-in user id this progress belongs to (null = local-only / not logged in). */
+  owner: string | null;
+  /** Goes up by one on "Reset everything", so other devices drop their older progress. */
+  epoch: number;
+  /** When settings were last changed (the newest settings win when devices sync). */
+  profileUpdatedAt: string;
   profile: Profile;
   cards: Record<string, StoredCard>;
   /** Words marked "I already know this" (skipped, not scheduled). */
@@ -79,6 +85,9 @@ export function defaultState(): AppState {
   return {
     v: 1,
     createdAt: new Date().toISOString(),
+    owner: null,
+    epoch: 0,
+    profileUpdatedAt: '',
     profile: {
       onboarded: false,
       level: 'A1',
@@ -99,6 +108,10 @@ export function defaultState(): AppState {
     days: {},
     writing: [],
   };
+}
+
+export function withDefaults(raw: Partial<AppState>): AppState {
+  return merge(raw);
 }
 
 function merge(raw: Partial<AppState>): AppState {
@@ -148,14 +161,30 @@ export function update(fn: (draft: AppState) => void) {
   emit();
 }
 
+export function subscribe(cb: () => void): () => void {
+  listeners.add(cb);
+  return () => {
+    listeners.delete(cb);
+  };
+}
+
 export function useApp(): AppState {
-  return useSyncExternalStore(
-    (cb) => {
-      listeners.add(cb);
-      return () => listeners.delete(cb);
-    },
-    () => state,
-  );
+  return useSyncExternalStore(subscribe, () => state);
+}
+
+/** Replace the whole state (used by cloud sync and login). */
+export function replaceState(next: AppState) {
+  state = merge(next);
+  persist();
+  emit();
+}
+
+/** Change settings (records the time, so the newest settings win across devices). */
+export function updateProfile(patch: Partial<Profile>) {
+  update((s) => {
+    Object.assign(s.profile, patch);
+    s.profileUpdatedAt = new Date().toISOString();
+  });
 }
 
 export function today(draft: AppState): DayLog {
@@ -230,14 +259,27 @@ export function exportJSON(): string {
 export function importJSON(text: string): boolean {
   const raw = JSON.parse(text);
   if (!raw || raw.v !== 1 || typeof raw.cards !== 'object') return false;
-  state = merge(raw);
+  // A backup always belongs to whoever is logged in now.
+  state = merge({ ...raw, owner: state.owner, epoch: state.epoch, profileUpdatedAt: new Date().toISOString() });
   persist();
   emit();
   return true;
 }
 
+/** "Reset everything": fresh progress for the same user; the higher epoch makes other devices drop their old copy too. */
 export function resetAll() {
-  state = defaultState();
+  state = { ...defaultState(), owner: state.owner, epoch: state.epoch + 1, profileUpdatedAt: new Date().toISOString() };
   persist();
+  emit();
+}
+
+/** Forget this device's progress (used on log out; the cloud copy is kept). */
+export function clearLocal() {
+  state = defaultState();
+  try {
+    localStorage.setItem(KEY, JSON.stringify(state));
+  } catch {
+    /* ignore */
+  }
   emit();
 }

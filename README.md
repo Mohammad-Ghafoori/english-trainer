@@ -51,6 +51,30 @@ The app is a PWA, so it needs to be served over **HTTPS** to install on a phone 
 
 Progress is stored **on each device** (in the browser). To move it, use **Progress → Export progress** on one device and **Import progress** on the other.
 
+## Accounts and sync (optional)
+
+With [Supabase](https://supabase.com) (free), each person logs in with a username and password, and their progress syncs across all their devices. It still works offline and syncs later. Only you create accounts; nobody can sign up alone. Without Supabase settings, the app runs in local-only mode.
+
+### One-time setup
+
+1. Create a free Supabase account and a **New project**. Pick a region close to you (for example Frankfurt), and save the database password somewhere safe.
+2. **SQL Editor → New query**: paste the whole file [`supabase/schema.sql`](supabase/schema.sql) and click **Run**. This creates a private progress table; each user can only read and change their own row.
+3. **Authentication → Sign In / Providers → Email**: turn **off** "Allow new users to sign up".
+4. **Project Settings → API Keys**: copy the **Project URL** and the **Publishable key** (`sb_publishable_…`; older projects call it the `anon` `public` key).
+   - Never share the **secret** / `service_role` key or the database password.
+5. Add them to the app:
+   - **Website:** GitHub repo → Settings → Secrets and variables → Actions → **Variables** → add `SUPABASE_URL` and `SUPABASE_KEY`, then re-run the deploy workflow.
+   - **Local development:** create `.env.local` with `VITE_SUPABASE_URL=…` and `VITE_SUPABASE_KEY=…`. Git ignores this file.
+
+### Add a friend (or yourself)
+
+**Authentication → Users → Add user → Create new user**
+
+- **Email:** `username@english-trainer.app`, for example `ali@english-trainer.app`. No email is sent; this is just how the username is stored.
+- **Password:** choose one and tick **Auto Confirm User**.
+
+Your friend logs in with just **`ali`** and that password, and can change the password later on the Progress page. To remove someone, delete the user; their progress is deleted with them.
+
 ## Notes
 
 - **Voices:** the app uses the voices built into your system. More English voices give better listening practice.

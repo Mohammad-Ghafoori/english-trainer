@@ -9,6 +9,10 @@ import { Ielts } from './pages/Ielts';
 import { Me } from './pages/Me';
 import { Method } from './pages/Method';
 import { Onboarding } from './pages/Onboarding';
+import { Login } from './pages/Login';
+import { cloudEnabled } from './lib/supabase';
+import { startSync, useSyncStatus } from './lib/sync';
+import { SyncBadge } from './components/SyncBadge';
 
 const NAV = [
   { id: 'today', en: 'Today', fa: 'امروز', icon: 'home' },
@@ -22,6 +26,12 @@ export default function App() {
   const s = useApp();
   const route = useRoute();
   const [page, ...rest] = route;
+  const sync = useSyncStatus();
+
+  // Logged in (now or earlier on this device): keep progress in sync with the cloud.
+  useEffect(() => {
+    if (cloudEnabled && s.owner) void startSync(s.owner);
+  }, [s.owner]);
 
   // Theme
   useEffect(() => {
@@ -46,6 +56,8 @@ export default function App() {
     };
   }, []);
 
+  if (cloudEnabled && !s.owner) return <Login />;
+  if (cloudEnabled && page === 'login') return <Login relogin />;
   if (!s.profile.onboarded) return <Onboarding />;
 
   const active = page ?? 'today';
@@ -86,10 +98,20 @@ export default function App() {
           </a>
         ))}
         <div className="sidebar-foot small muted">
-          <Icon name="flame" size={14} /> {st} day streak
+          <SyncBadge status={sync} />
+          <span>
+            <Icon name="flame" size={14} /> {st} day streak
+          </span>
         </div>
       </nav>
-      <main className="main">{content}</main>
+      <main className="main">
+        {sync.state === 'auth' && (
+          <a className="banner" href={href('login')}>
+            <Icon name="info" size={18} /> Your login expired. Tap here to log in again — your progress on this device is safe.
+          </a>
+        )}
+        {content}
+      </main>
       <nav className="tabbar" aria-label="Main">
         {NAV.map((n) => (
           <a key={n.id} href={href(n.id)} className={`tab ${active === n.id || (active === 'method' && n.id === 'me') ? 'on' : ''}`}>

@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { LEVELS, LEVEL_INFO, type Level } from '../types';
 import { Btn, Card, Fa, Icon, Segmented } from '../components/ui';
 import { WORDS_BY_LEVEL } from '../data/words';
-import { update } from '../lib/store';
+import { updateProfile } from '../lib/store';
 import { sample, shuffle } from '../lib/util';
 
 const PER_LEVEL = 8;
@@ -31,11 +31,7 @@ export function Onboarding() {
   }
 
   function finish() {
-    update((s) => {
-      s.profile.level = level;
-      s.profile.dailyNew = daily;
-      s.profile.onboarded = true;
-    });
+    updateProfile({ level, dailyNew: daily, onboarded: true });
     location.hash = '/today';
   }
 
