@@ -3,26 +3,70 @@ import type { AppState } from '../lib/store';
 import { KNOWN_STABILITY, parseCardId, prodId, recId } from '../lib/srs';
 import { endOfToday, shuffle } from '../lib/util';
 
-// Word lists live in src/data/words/<level>.json. Add more files or entries any time.
-const files = import.meta.glob<RawWord[]>('./words/*.json', { eager: true, import: 'default' });
+// Word lists live in src/data/words/*.json:
+//   a1.json … c1.json  → the level comes from the file name
+//   any-other-name.json → each entry has its own "lv" (e.g. ngsl-1.json, extra-ielts.json)
+// They are loaded as separate files (not inside the app code) before the app starts.
+const loaders = import.meta.glob<RawWord[]>('./words/*.json', { import: 'default' });
 const trapFiles = import.meta.glob<Trap[]>('./traps.json', { eager: true, import: 'default' });
 
 export const WORDS_BY_LEVEL: Record<Level, Word[]> = { A1: [], A2: [], B1: [], B2: [], C1: [] };
-{
-  const seen = new Set<string>();
-  for (const level of LEVELS) {
-    for (const r of files[`./words/${level.toLowerCase()}.json`] ?? []) {
-      const id = r.w.trim().toLowerCase();
-      if (!id || seen.has(id)) continue; // keep the first (lowest-level) copy of a word
-      seen.add(id);
-      WORDS_BY_LEVEL[level].push({ ...r, id, level });
-    }
+export const ALL_WORDS: Word[] = [];
+export const WORD_MAP = new Map<string, Word>();
+export const TRAPS: Trap[] = trapFiles['./traps.json'] ?? [];
+
+/** Pure grammar words: taught by the grammar lessons, so they come last as flashcards. */
+const GRAMMAR_ONLY = new Set(['the', 'a', 'an', 'of', 'and', 'to']);
+
+const fileName = (p: string) => p.split('/').pop()!.replace(/\.json$/, '');
+const levelFromName = (p: string) => LEVELS.find((l) => fileName(p) === l.toLowerCase());
+
+/** Two frequent (ranked) words, then one topic word — so you learn the most useful words first without only learning grammar words. */
+function interleave(ranked: Word[], unranked: Word[]): Word[] {
+  const out: Word[] = [];
+  let i = 0;
+  let j = 0;
+  while (i < ranked.length || j < unranked.length) {
+    for (let k = 0; k < 2 && i < ranked.length; k++) out.push(ranked[i++]);
+    if (j < unranked.length) out.push(unranked[j++]);
   }
+  return out;
 }
 
-export const ALL_WORDS: Word[] = LEVELS.flatMap((l) => WORDS_BY_LEVEL[l]);
-export const WORD_MAP = new Map(ALL_WORDS.map((w) => [w.id, w]));
-export const TRAPS: Trap[] = trapFiles['./traps.json'] ?? [];
+export async function initWords(): Promise<void> {
+  const files = await Promise.all(
+    Object.entries(loaders).map(async ([path, load]) => ({ path, base: !!levelFromName(path), data: await load() })),
+  );
+  // Level files first (in level order), then the others alphabetically.
+  files.sort((a, b) => Number(b.base) - Number(a.base) || a.path.localeCompare(b.path));
+
+  const byId = new Map<string, Word>();
+  for (const { path, data } of files) {
+    const fileLevel = levelFromName(path);
+    for (const raw of data) {
+      const level = raw.lv ?? fileLevel;
+      const id = raw.w?.trim().toLowerCase();
+      if (!id || !level || !LEVELS.includes(level)) continue;
+      const prev = byId.get(id);
+      // If a word appears twice, keep the lower-level copy.
+      if (prev && LEVELS.indexOf(prev.level) <= LEVELS.indexOf(level)) continue;
+      byId.set(id, { ...raw, id, level });
+    }
+  }
+
+  const all = [...byId.values()];
+  for (const level of LEVELS) {
+    const inLevel = all.filter((w) => w.level === level);
+    const late = inLevel.filter((w) => GRAMMAR_ONLY.has(w.id));
+    const rest = inLevel.filter((w) => !GRAMMAR_ONLY.has(w.id));
+    const ranked = rest.filter((w) => w.r).sort((a, b) => a.r! - b.r!);
+    const unranked = rest.filter((w) => !w.r);
+    WORDS_BY_LEVEL[level].splice(0, Infinity, ...interleave(ranked, unranked), ...late);
+  }
+  ALL_WORDS.splice(0, Infinity, ...LEVELS.flatMap((l) => WORDS_BY_LEVEL[l]));
+  WORD_MAP.clear();
+  for (const w of ALL_WORDS) WORD_MAP.set(w.id, w);
+}
 
 export function wordStatus(s: AppState, id: string): WordStatus {
   if (s.known[id]) return 'known';

@@ -27,7 +27,7 @@ const POINTS: { en: string; fa: string }[] = [
   },
   {
     en: 'Lots of input: read and listen to English you mostly understand.',
-    fa: 'ورودی زیاد: برای فهم راحت باید حدود ۹۵ تا ۹۸٪ کلمه‌های یک متن را بدانید. یعنی حدود ۳۰۰۰ خانواده‌ی کلمه برای مکالمه‌ی روزمره و ۸۰۰۰ تا ۹۰۰۰ برای خواندن راحت. کلمه‌های این برنامه پایه است؛ بقیه را از خواندن و گوش دادن زیاد یاد می‌گیرید.',
+    fa: 'ورودی زیاد: برای فهم راحت باید حدود ۹۵ تا ۹۸٪ کلمه‌های یک متن را بدانید. یعنی حدود ۳۰۰۰ خانواده‌ی کلمه برای مکالمه‌ی روزمره و ۸۰۰۰ تا ۹۰۰۰ برای خواندن راحت. کلمه‌های این برنامه (حدود ۵۰۰۰ کلمه‌ی پرکاربرد و آکادمیک) پایه است؛ بقیه را از خواندن و گوش دادن زیاد یاد می‌گیرید.',
   },
   {
     en: 'Speak and write, then get feedback.',
@@ -49,6 +49,7 @@ const SOURCES = [
   { t: 'Hamada (2019), Shadowing: What is it? How to use it. Where will it go? — RELC Journal', u: 'https://journals.sagepub.com/doi/10.1177/0033688218771380' },
   { t: 'Cambridge English: Guided learning hours', u: 'https://support.cambridgeenglish.org/hc/en-gb/articles/202838506-Guided-learning-hours' },
   { t: 'FSRS spaced repetition algorithm (open source)', u: 'https://github.com/open-spaced-repetition' },
+  { t: 'Word selection: New General Service List & New Academic Word List — Browne, Culligan & Phillips (CC BY-SA 4.0)', u: 'https://www.newgeneralservicelist.com/' },
 ];
 
 export function Method() {

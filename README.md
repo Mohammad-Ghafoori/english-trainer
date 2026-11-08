@@ -8,7 +8,7 @@ It runs in the browser on a computer and a phone, and you can install it like a 
 | Part | What it does |
 |---|---|
 | **Today** | One daily session (~20 min): review words → new words → a Persian trap → sound training → shadowing → IELTS speaking (from B1). |
-| **Words** | 1,500 words and phrases from A1 to C1 (IELTS vocabulary, letter phrases, collocations). Each has British IPA, Persian meaning, an example sentence and its Persian translation, plus audio. |
+| **Words** | 4,722 words and phrases from A1 to C1: the 2,500 most common English words (NGSL), about 850 academic words (NAWL), 400 phrasal verbs and spoken expressions, 400 IELTS topic words and collocations, plus formal-letter phrases. Each has British IPA, Persian meaning, an example sentence and its Persian translation, plus audio. The most frequent words come first. |
 | **Smart review** | FSRS spaced repetition (more accurate than Anki's old SM-2). You first recognise a word (English → Persian), and later you have to produce it (Persian → type the English). |
 | **Persian traps** | 15 lessons × 10 exercises on mistakes that come from Persian: he/she (او), a/the, "three book", "the book that I bought it", "Nobody didn't come", learn/teach, married *to*, and more. |
 | **Sounds** | Listening training with many voices (HVPT) for sounds Persian doesn't have: v/w, th, ship/sheep, cat/bed, cup/cap, law/low, late/let. Then speaking practice with speech recognition, or record and compare. |
@@ -57,5 +57,6 @@ Progress is stored **on each device** (in the browser). To move it, use **Progre
   - Windows: Settings → Time & Language → Speech → Add voices.
   - Android: Settings → Text-to-speech → Google → Install voice data.
 - **Speech recognition** needs internet (Google or Microsoft servers). If it's blocked or offline, the app switches to *record and compare*, which works offline.
-- **Adding content:** word lists are in `src/data/words/*.json`, grammar traps are in `src/data/traps.json`, sounds are in `src/data/sounds.ts`, and IELTS prompts are in `src/data/ielts.ts`.
+- **Adding content:** word lists are in `src/data/words/*.json` (`a1.json`…`c1.json` take their level from the file name; any other file gives each entry an `lv`, and an optional NGSL frequency rank `r`). Grammar traps are in `src/data/traps.json`, sounds are in `src/data/sounds.ts`, and IELTS prompts are in `src/data/ielts.ts`.
+- **Word selection** uses the [New General Service List and New Academic Word List](https://www.newgeneralservicelist.com/) by Browne, Culligan & Phillips, licensed CC BY-SA 4.0. The Persian meanings, IPA and example sentences were written for this app.
 - The IELTS prompts are original practice prompts in IELTS style, not official test material. Before booking your test, check the official immigration websites for current score requirements (for example, Canada CLB 7 means IELTS General 6.0 in each skill).

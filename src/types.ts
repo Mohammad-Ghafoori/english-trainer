@@ -17,6 +17,10 @@ export interface RawWord {
   ex: string;
   exFa: string;
   t: string;
+  /** Level, when the file name doesn't give one (e.g. ngsl-1.json). */
+  lv?: Level;
+  /** Frequency rank in the New General Service List (lower = more common). */
+  r?: number;
 }
 
 export interface Word extends RawWord {
